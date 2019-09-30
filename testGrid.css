@@ -5,30 +5,72 @@
     padding: 0 1.25rem;
     box-sizing: border-box;
     display: grid;
-    grid-template-columns: repeat(12,1fr);
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(10%, auto);
+    gap: 1px 1px;
+    height: auto;
+    clear:both;
+
 }
-.container-half{
-    position: relative;
-    width:50%;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    box-sizing: border-box;
-    grid-template-columns: repeat(6,1fr);
-    grid-auto-rows: 5%;
+.container:after{
+    clear: both; 
+    content: "";
+    display:table;
 }
 
-.container-quarter{
-    position: relative;
-    width:25%;
-    margin: 0 auto;
-    padding: 0 1.25rem;
-    box-sizing: border-box;
-    grid-template-columns: repeat(3,1fr);
-    grid-auto-rows: 2.5%;
-}
 .col-one{
+    grid-column: span 1;
+}
+.col-two{
+    grid-column: span 2;
 
+}
+.col-three{
+    grid-column: span 3;
 
+}
+.col-four{
+    grid-column: span 4;
+
+}
+.col-five{
+    grid-column: span 5;
+
+}
+.col-six{
+    grid-column: span 6;
+
+}
+.col-7{
+    grid-column: span 7;
+
+}
+.col-8{
+    grid-column: span 8;
+
+}
+.col-9{
+    grid-column: span 9;
+
+}
+.col-10{
+    grid-column: span 10;
+
+}
+.col-11{
+    grid-column: span 11;
+
+}
+.col-12{
+    grid-column: span 12;
+
+}
+.row-one{
+    /* grid-area: [linename1] [linename1] [linename1] [grid-end];  */
+
+}
+.row-two{
+    /* grid-area: [linename2] [linename1] [linename2] [grid-end]; */
 }
 div{
     border-style:solid;
